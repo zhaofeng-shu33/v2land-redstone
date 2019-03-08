@@ -9,6 +9,6 @@ CREATE TABLE public.media (
     description text,
     icon text,
     type public.enum_media_role,
-    id integer NOT NULL
+    id SERIAL primary key
 );
 
