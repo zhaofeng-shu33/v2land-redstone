@@ -632,6 +632,7 @@ CREATE TABLE public.masked_client (
 CREATE TABLE public.news (
     url text,
     source text,
+    mediaId integer,
     title text,
     abstract text,
     "time" timestamp with time zone,
