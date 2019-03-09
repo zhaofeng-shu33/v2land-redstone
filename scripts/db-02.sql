@@ -1175,10 +1175,12 @@ CREATE TYPE public.enum_media_type AS ENUM (
     'institution'
 );
 CREATE TABLE public.media (
-    name text,
+    name text NOT NULL,
     description text,
     icon text,
-    type public.enum_media_type,
+    username text,
+    website text,
+    type public.enum_media_type NOT NULL,
     id SERIAL primary key,
     "createdAt" timestamp with time zone,
     "updatedAt" timestamp with time zone
