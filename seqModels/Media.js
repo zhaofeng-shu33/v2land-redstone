@@ -17,12 +17,22 @@ const Media = global.sequelize.define('media', {
     type: Sequelize.TEXT,
     allowNull: false,
   },
+  username: {
+    type: Sequelize.TEXT,
+    allowNull: true
+  },
   icon: {
     type: Sequelize.TEXT,
     allowNull: true
   }
 }, {
   freezeTableName: true,
+  validate: {
+    socialMediaHasUsername(){
+      if(this.type=='social media' && this.username == null)
+        throw new Error('type with social media must have username field filled.')
+    }
+  }
 });
 
 module.exports = Media;
