@@ -1179,5 +1179,7 @@ CREATE TABLE public.media (
     description text,
     icon text,
     type public.enum_media_type,
-    id SERIAL primary key
+    id SERIAL primary key,
+    "createdAt" timestamp with time zone,
+    "updatedAt" timestamp with time zone
 );
