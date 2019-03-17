@@ -21,6 +21,10 @@ const Media = global.sequelize.define('media', {
     type: Sequelize.TEXT,
     allowNull: true
   },
+  homepage: {
+    type: Sequelize.TEXT,
+    allowNull: true
+  },
   icon: {
     type: Sequelize.TEXT,
     allowNull: true

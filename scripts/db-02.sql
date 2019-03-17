@@ -1179,7 +1179,7 @@ CREATE TABLE public.media (
     description text,
     icon text,
     username text,
-    website text,
+    homepage text,
     type public.enum_media_type NOT NULL,
     id SERIAL primary key,
     "createdAt" timestamp with time zone,
