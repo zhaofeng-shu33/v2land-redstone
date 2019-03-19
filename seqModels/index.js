@@ -4,6 +4,7 @@ const Critique = require('./Critique');
 const Event = require('./Event');
 const HeaderImage = require('./HeaderImage');
 const News = require('./News');
+const Media = require('./Media');
 const Notification = require('./Notification');
 const Record = require('./Record');
 const Stack = require('./Stack');
@@ -121,6 +122,7 @@ module.exports = {
   Event,
   HeaderImage,
   News,
+  Media,
   Notification,
   Record,
   Stack,
