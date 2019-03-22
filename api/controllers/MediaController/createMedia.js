@@ -24,4 +24,4 @@ async function createMedia (req, res) {
 
 }
 
-module.exports = createEvent;
+module.exports = createMedia;
