@@ -53,6 +53,7 @@ module.exports.routes = {
   'PUT /event/:eventName/header_image': 'EventController.updateHeaderImage',
   'GET /event/:eventName': 'EventController.getEvent',
 
+  'POST /media': 'MediaController.createMedia',
   'GET /stack/:stackId': 'StackController.getStack',
   'POST /stack/list': 'StackController.getStackList',
   'PUT /stack/list': 'StackController.updateMultipleStacks',
