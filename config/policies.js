@@ -25,6 +25,10 @@ module.exports.policies = {
     '*': false,
   },
 
+  MediaController: {
+    'createMedia': ['isLoggedIn', 'isManager']
+  },
+
   EventController: {
     'findEvent': true,
     'getEvent': true,
